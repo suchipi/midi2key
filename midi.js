@@ -18,6 +18,8 @@ function listDevices() {
   for (let i = 0; i < count; i++) {
     console.log(i, input.getPortName(i));
   }
+
+  return count;
 }
 exports.listDevices = listDevices;
 

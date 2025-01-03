@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js sample-config.jsonc",
-    "build": "cd dist && pkg ../index.js"
+    "build": "mkdir -p dist && cd dist && pkg ../midi2key.js"
   },
   "author": "Lily Skye <me@suchipi.com>",
   "license": "MIT",
