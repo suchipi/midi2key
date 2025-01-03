@@ -1,0 +1,84 @@
+{
+  "mappings": {
+    // Hotbar
+    "C  1": "ONE",
+    "C# 1": ["LEFT_SHIFT", "ONE"],
+    "D  1": "TWO",
+    "Eb 1": ["LEFT_SHIFT", "TWO"],
+    "E  1": "THREE",
+    "F  1": "FOUR",
+    "F# 1": ["LEFT_SHIFT", "FOUR"],
+    "G  1": "FIVE",
+    "Ab 1": ["LEFT_SHIFT", "FIVE"],
+    "A  1": "SIX",
+    "Bb 1": ["LEFT_SHIFT", "SIX"],
+    "B  1": "SEVEN",
+
+    "C  2": "EIGHT",
+    "C# 2": ["LEFT_SHIFT", "EIGHT"],
+    "D  2": "NINE",
+    "Eb 2": ["LEFT_SHIFT", "NINE"],
+    "E  2": "ZERO",
+    "F  2": "MINUS",
+
+    // Back
+    "F# 2": ["LEFT_SHIFT", "MINUS"],
+
+    "G  2": "EQUAL",
+    "Ab 2": ["LEFT_SHIFT", "EQUAL"],
+    "A  2": "T",
+    "Bb 2": "ESCAPE",
+    "B  2": "M",
+
+    // Movement
+    "C  3": "A",
+    "C# 3": "W",
+    "D  3": "S",
+    "Eb 3": "W",
+    "E  3": "D",
+
+    // Jump
+    "F  3": "SPACE",
+
+    // Confirm
+    "F# 3": "NUMPAD_0",
+
+    // D-pad (targeting)
+    "G  3": "NUMPAD_4",
+    "Ab 3": "NUMPAD_8",
+    "A  3": "NUMPAD_2",
+    "Bb 3": "NUMPAD_8",
+    "B  3": "NUMPAD_6",
+
+    // Camera
+    "C  4": "LEFT",
+    "C# 4": "UP",
+    "D  4": "DOWN",
+    "Eb 4": "UP",
+    "E  4": "RIGHT",
+
+    // Selection
+    "F  4": "NUMPAD_0",
+    "F# 4": "ESCAPE",
+    "G  4": "NUMPAD_4",
+    "Ab 4": "NUMPAD_8",
+    "A  4": "NUMPAD_2",
+    "Bb 4": "NUMPAD_8",
+    "B  4": "NUMPAD_6",
+
+    "C  5": "LEFT_CONTROL",
+    "C# 5": null,
+    "D  5": "LEFT_ALT",
+    "Eb 5": null,
+    "E  5": "LEFT_SHIFT",
+    "F  5": null,
+    "F# 5": null,
+    "G  5": null,
+    "Ab 5": null,
+    "A  5": null,
+    "Bb 5": "PAGE_UP",
+    "B  5": "PAGE_DOWN",
+
+    "C  6": "RIGHT_BRACKET"
+  }
+}

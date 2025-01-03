@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js sample-config.jsonc",
+    "build": "cd dist && pkg ../index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jsonc": "^2.0.0",
     "midi": "^2.0.0",
     "suchibot": "^1.9.2"
   },
   "devDependencies": {
-    "npx": "^10.2.2"
+    "pkg": "^5.8.1"
   }
 }
