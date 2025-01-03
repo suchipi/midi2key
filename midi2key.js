@@ -55,7 +55,7 @@ async function main() {
 
   const count = Midi.listDevices();
   let deviceIndex = 0;
-  if (count > 0) {
+  if (count > 1) {
     const choice = await prompt(
       "Please enter the number for the MIDI input device you want to use:"
     );

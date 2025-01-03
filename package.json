@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js sample-config.jsonc",
+    "start": "node midi2key.js configs/tower-unite-piano.jsonc",
     "build": "rimraf dist && mkdirp dist && cd dist && pkg --targets node18-linux-x64,node18-macos-x64,node18-win-x64 ../midi2key.js"
   },
   "author": "Lily Skye <me@suchipi.com>",
