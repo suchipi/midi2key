@@ -12,6 +12,8 @@ Barebones cross-platform app which simulates keyboard (ie. qwerty) events when b
 - Plug in your MIDI device
 - Drag your .jsonc config onto `midi2key-win.exe`
 
+> If you have more than one MIDI device connected to your computer, you'll be asked to choose which one to use
+
 ## Key names for JSONC config
 
 - `BACKSPACE`
