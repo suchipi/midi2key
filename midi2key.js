@@ -4,7 +4,7 @@ const path = require("path");
 const readline = require("readline/promises");
 const jsonc = require("jsonc");
 const suchibot = require("suchibot");
-const midi = require("./midi");
+const Midi = require("./lib/midi");
 
 function prompt(message) {
   const rl = readline.createInterface({
@@ -53,16 +53,16 @@ async function main() {
     console.log(`Loaded sleepAfterMs: ${sleepAfterMs}.`);
   }
 
-  const count = midi.listDevices();
+  const count = Midi.listDevices();
   let deviceIndex = 0;
   if (count > 0) {
     const choice = await prompt(
-      "Please enter the number for the MIDI device you want to use:"
+      "Please enter the number for the MIDI input device you want to use:"
     );
     deviceIndex = parseInt(choice.trim());
   }
 
-  midi.start(deviceIndex, mappings, { sleepAfterMs });
+  Midi.start(deviceIndex, mappings, { sleepAfterMs });
   suchibot.startListening();
   console.log("Now listening for input. Press Ctrl+C at any time to exit.");
 }

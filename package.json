@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js sample-config.jsonc",
-    "build": "mkdir -p dist && cd dist && pkg ../midi2key.js"
+    "build": "rimraf dist && mkdirp dist && cd dist && pkg --targets node18-linux-x64,node18-macos-x64,node18-win-x64 ../midi2key.js"
   },
   "author": "Lily Skye <me@suchipi.com>",
   "license": "MIT",
@@ -15,6 +15,8 @@
     "suchibot": "^1.9.2"
   },
   "devDependencies": {
-    "pkg": "^5.8.1"
+    "mkdirp": "^3.0.1",
+    "pkg": "^5.8.1",
+    "rimraf": "^6.0.1"
   }
 }
