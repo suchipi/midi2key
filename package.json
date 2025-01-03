@@ -7,8 +7,8 @@
     "start": "node index.js sample-config.jsonc",
     "build": "cd dist && pkg ../index.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Lily Skye <me@suchipi.com>",
+  "license": "MIT",
   "dependencies": {
     "jsonc": "^2.0.0",
     "midi": "^2.0.0",
