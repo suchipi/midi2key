@@ -138,7 +138,6 @@ Barebones cross-platform app which simulates keyboard (ie. qwerty) events when b
 - `SEVEN`
 - `EIGHT`
 - `NINE`
-- `ANY`
 
 ## License
 

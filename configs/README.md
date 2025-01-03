@@ -126,4 +126,3 @@ Here's a list of all the key names:
 - `SEVEN`
 - `EIGHT`
 - `NINE`
-- `ANY`
