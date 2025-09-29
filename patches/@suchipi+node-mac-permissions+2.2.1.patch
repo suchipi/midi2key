@@ -1,0 +1,10 @@
+diff --git a/node_modules/@suchipi/node-mac-permissions/index.js b/node_modules/@suchipi/node-mac-permissions/index.js
+index ccf6ae3..84af308 100644
+--- a/node_modules/@suchipi/node-mac-permissions/index.js
++++ b/node_modules/@suchipi/node-mac-permissions/index.js
+@@ -1,4 +1,4 @@
+-const permissions = require('bindings')('permissions.node')
++const permissions = require('./build/Release/permissions.node')
+ 
+ function getAuthStatus(type) {
+   const validTypes = [

@@ -1,0 +1,32 @@
+diff --git a/node_modules/@suchipi/libnut-win32/index.js b/node_modules/@suchipi/libnut-win32/index.js
+index f9bfefc..b1210fc 100644
+--- a/node_modules/@suchipi/libnut-win32/index.js
++++ b/node_modules/@suchipi/libnut-win32/index.js
+@@ -2,7 +2,7 @@ let libnut;
+ if (process.platform === 'darwin') {
+     libnut = require("./permissionCheck");
+ } else {
+-    libnut = require("bindings")("libnut");
++    libnut = require("./build/Release/libnut.node");
+ }
+ 
+ module.exports = libnut;
+diff --git a/node_modules/@suchipi/libnut-win32/permissionCheck.js b/node_modules/@suchipi/libnut-win32/permissionCheck.js
+index e829f22..b4181a2 100644
+--- a/node_modules/@suchipi/libnut-win32/permissionCheck.js
++++ b/node_modules/@suchipi/libnut-win32/permissionCheck.js
+@@ -1,4 +1,4 @@
+-let libnut = require("bindings")("libnut");
++let libnut = require("./build/Release/libnut.node");
+ 
+ let hasScreenRecordingPermission = false;
+ let hasAccessibilityPermission = false;
+@@ -76,7 +76,7 @@ try {
+ } catch (e) {
+     console.warn(`Encountered error establishing macOS permission checks:`, e.message);
+     console.warn(`Returning original module.`);
+-    libnut = require("bindings")("libnut");
++    libnut = require("./build/Release/libnut.node");
+ } finally {
+     module.exports = libnut;
+ }

@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node midi2key.js configs/tower-unite-piano.jsonc",
-    "build": "rimraf dist && mkdirp dist && cd dist && pkg --targets node18-linux-x64,node18-macos-x64,node18-win-x64 ../midi2key.js"
+    "build": "./build.sh",
+    "postinstall": "patch-package"
   },
   "author": "Lily Skye <me@suchipi.com>",
   "license": "MIT",
@@ -16,8 +17,7 @@
     "suchibot": "^1.9.2"
   },
   "devDependencies": {
-    "mkdirp": "^3.0.1",
-    "pkg": "^5.8.1",
-    "rimraf": "^6.0.1"
+    "bun": "^1.2.23",
+    "patch-package": "^8.0.0"
   }
 }

@@ -1,0 +1,10 @@
+diff --git a/node_modules/midi/midi.js b/node_modules/midi/midi.js
+index e34df71..b5c0aa3 100644
+--- a/node_modules/midi/midi.js
++++ b/node_modules/midi/midi.js
+@@ -1,4 +1,4 @@
+-var midi = require('bindings')('midi');
++var midi = require('./build/Release/midi.node');
+ var Stream = require('stream');
+ 
+ // MIDI input inherits from EventEmitter
